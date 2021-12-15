@@ -1,0 +1,48 @@
+﻿LAMP Installation Guide
+-------------------------------------------------------------
+
+
+yum install httpd
+
+service httpd start
+
+//wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+
+//sudo rpm -ivh mysql-community-release-el7-5.noarch.rpm
+
+yum install php php-mysql
+
+
+service httpd restart
+
+
+yum update
+
+//yum install mysql-server
+//service mysqld start
+
+//mysql --ver
+
+// mysql_secure_installation mysql
+
+Create a page to test your PHP installation:
+
+cd /var/www/html
+vi test.php
+
+Type i to start the insert mode
+ <?php
+         echo "Hello World!";
+     ?>
+
+
+Type vi test.php
+
+
+Type :wq to write the file and quit vi
+Open a browser and access test.php to test your PHP installation: http://ec2-50-17-14-16.compute-1.amazonaws.com/test.php (Use your actual public DNS name/Public IP).
+
+
+//From vocareum tool to connect aws Console account from educate account
+;wq
+    Click AWS account   ----->   AWS Educate Starter Account   --------> AWS Console
